@@ -95,8 +95,8 @@ var dba = firebase.database();
 			 	reg_num: document.getElementById('reg').value.toString()
 			 }
 
-       if(checkDup==0)
-       {
+       
+       
 
 			ref.push(data); 
 			setTimeout(function(){ 
@@ -106,6 +106,6 @@ var dba = firebase.database();
 			 // document.getElementById('signIn').click();
 			 }, 2000);
 
-      }
+      
 
 	}
