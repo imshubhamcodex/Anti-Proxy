@@ -5,7 +5,8 @@ function getSelectedValueData()
 {
       Branch=document.getElementById('Branch').value;
       Section=document.getElementById('Section').value;
-      getdate=document.getElementById('dateData').value;   
+      getdate=document.getElementById('dateData').value;
+      console.log(getdate);   
 }
 function retriveData()
 {

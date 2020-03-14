@@ -88,15 +88,12 @@ var dba = firebase.database();
     		else
     			var dd=today.getDate();
 
-			var date = dd+'-'+mm+'-'+today.getFullYear();
+			var date = today.getFullYear()+'-'+mm+'-'+dd;
 			var db = firebase.database();
 		 	var ref = db.ref(date+"/"+branch+"/"+section);
 			 var data = {
 			 	reg_num: document.getElementById('reg').value.toString()
 			 }
-
-       
-       
 
 			ref.push(data); 
 			setTimeout(function(){ 
