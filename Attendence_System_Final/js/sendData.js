@@ -80,13 +80,17 @@ var dba = firebase.database();
 	function sendingData(){
 			var today = new Date();
 
+			var today = new Date();
+
 			 if(today.getMonth()+1<10)
-      			var mm="0"+(today.getMonth()+1);
+      				var mm="0"+(today.getMonth()+1);
+          		else
+           			 var mm = today.getMonth()+1
       		
-      		if(today.getDate()<10)
-    			var dd="0"+(today.getDate());
-    		else
-    			var dd=today.getDate();
+      			if(today.getDate()<10)
+    				var dd="0"+(today.getDate());
+    			else
+    				var dd=today.getDate();
 
 			var date = today.getFullYear()+'-'+mm+'-'+dd;
 			var db = firebase.database();
